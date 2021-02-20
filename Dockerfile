@@ -5,9 +5,9 @@ FROM openjdk:8-jdk
 ENV SPRING_CONFIG_NAME=application \
     SPRING_CONFIG_LOCATION=/app/config/
 
-ARG INSTALL_LOCATION=./target
+#ARG INSTALL_LOCATION=./target
 
-COPY ${INSTALL_LOCATION}/*.jar /app/adapter.jar
+COPY ./target/*.jar /app/adapter.jar
 RUN ls -la app/
 #COPY ${INSTALL_LOCATION}/config/entrypoint.sh /
 
