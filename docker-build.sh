@@ -26,4 +26,4 @@ docker system prune -f
 docker build -t ${IMAGE_NAME} -f ./${DOCKER_BUILD_PATH}/Dockerfile ./${DOCKER_BUILD_PATH}/
 echo "------------------------------"
 #docker run --rm -it --name ${CONTAINER_NAME} -v ${LOCAL_VOLUME_PATH}:/app/properties -e ENVIRONMENT=dev -p 8081:8081 ${IMAGE_NAME}
-docker run --rm -it --name ${CONTAINER_NAME} -p 8080:8080 ${IMAGE_NAME}
+docker run --rm -it --name ${CONTAINER_NAME} --env PORT=7777 -p 7777:7777 ${IMAGE_NAME}
