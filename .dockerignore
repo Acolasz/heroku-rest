@@ -1,0 +1,17 @@
+.idea
+.git
+.gitignore
+.mvn
+docker-build.sh
+pom.xml
+README.md
+LICENSE.md
+mvnw
+mvnw.cmd
+src
+RestApp.iml
+target/classes
+target/generated-sources
+target/*.original
+target/maven-archiver
+target/maven-status

@@ -7,8 +7,8 @@ ENV SPRING_CONFIG_NAME=application \
 
 #ARG INSTALL_LOCATION=./target
 
-COPY ./target/*.jar /app/adapter.jar
-RUN ls -la app/
+COPY ./ /app
+RUN ls -la app/target
 #COPY ${INSTALL_LOCATION}/config/entrypoint.sh /
 
 #RUN mkdir -p /app/properties \
@@ -32,4 +32,4 @@ RUN ls -la app/
 
 #ENTRYPOINT ["/entrypoint.sh"]
 RUN echo $PORT
-ENTRYPOINT [ "sh", "-c", "java -Dserver.port=$PORT -Xmx300m -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8 -XX:+UseContainerSupport -Djava.security.egd=file:/dev/./urandom -jar /app/adapter.jar" ]
+ENTRYPOINT [ "sh", "-c", "java -Dserver.port=$PORT -Xmx300m -Xss512k -XX:CICompilerCount=2 -Dfile.encoding=UTF-8 -XX:+UseContainerSupport -Djava.security.egd=file:/dev/./urandom -jar /app/target/rest-app-0.0.1-SNAPSHOT.jar" ]

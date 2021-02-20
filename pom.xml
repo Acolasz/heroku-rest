@@ -4,11 +4,10 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.william.code</groupId>
-	<artifactId>RestApp</artifactId>
+	<artifactId>rest-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>RestApp</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
