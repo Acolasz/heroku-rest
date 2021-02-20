@@ -7,8 +7,8 @@ ENV SPRING_CONFIG_NAME=application \
 
 #ARG INSTALL_LOCATION=./target
 
-COPY ./ /app
-RUN ls -la app/target
+COPY . /app
+RUN ls -Rla /app
 #COPY ${INSTALL_LOCATION}/config/entrypoint.sh /
 
 #RUN mkdir -p /app/properties \
