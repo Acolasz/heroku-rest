@@ -7,6 +7,7 @@ ENV SPRING_CONFIG_NAME=application \
 
 ARG INSTALL_LOCATION=./target
 
+RUN ls -la ${INSTALL_LOCATION}/
 COPY ${INSTALL_LOCATION}/*.jar /app/adapter.jar
 #COPY ${INSTALL_LOCATION}/config/entrypoint.sh /
 
