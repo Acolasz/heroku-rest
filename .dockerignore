@@ -10,8 +10,8 @@ mvnw
 mvnw.cmd
 src
 RestApp.iml
-target/classes
-target/generated-sources
-target/*.original
-target/maven-archiver
-target/maven-status
+#target/classes
+#target/generated-sources
+#target/*.original
+#target/maven-archiver
+#target/maven-status
